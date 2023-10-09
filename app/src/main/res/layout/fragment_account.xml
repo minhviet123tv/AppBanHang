@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.account.AccountFragment"
+    android:id="@+id/layout_account_page">
+
+    <ImageView
+        android:id="@+id/imageView_back_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="@dimen/height_10"/>
+
+    <TextView
+        android:id="@+id/textView_title_account_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_10"
+        android:text="@string/title_account"
+        android:textSize="@dimen/title_fragment"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_account_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/textView_title_account_fragment"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_account_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/image_avatar_default"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/textView_account_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_email"
+            android:layout_below="@+id/imageView_account_avatar"
+            android:textSize="@dimen/text_18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/text_primary"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/line_account"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/layout_account_avatar"
+        android:background="@color/line_primary"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_account_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_account"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<resources>
+
+    <!--  Login  -->
+    <string name="app_name">PRM391x_SearchFood_Vietcvfx12045</string>
+    <string name="textview_title_login">Realax and shop</string>
+    <string name="textview_des_login">Shop online and get grocories delivered from stores to your home in as fast as 1 hour .</string>
+    <string name="button_text_sign_up">Sign Up</string>
+    <string name="button_text_sign_in">Sign In</string>
+
+    <!--  Sign up  -->
+    <string name="textview_title_sign_up">Sign Up</string>
+    <string name="button_next_sign_up">Next</string>
+    <string name="password">password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="email">Email</string>
+    <string name="example_email">Example@gmail.com</string>
+
+    <string name="empty_edit_text_notification">"Vui lòng nhập giá trị!"</string>
+    <string name="mat_khau_khong_trung_nhau">Mật khẩu không trùng nhau!</string>
+    <string name="tai_khoan_da_ton_tai">Tài khoản đã tồn tại!</string>
+    <string name="dang_ky_thanh_cong">Đăng ký thành công!</string>
+
+    <!--  Sign in  -->
+    <string name="textview_title_sign_in">Sign In</string>
+    <string name="button_next_sign_in">Next</string>
+
+    <string name="sai_mat_khau">Sai mật khẩu</string>
+    <string name="tai_khoan_chua_dang_ky">Tài khoản chưa đăng ký!</string>
+
+    <!--  Menu  -->
+    <string name="menu_name_home">Home</string>
+    <string name="menu_name_explore">Explore</string>
+    <string name="menu_name_cart">Cart</string>
+    <string name="menu_name_favorite">Favorite</string>
+    <string name="menu_name_account">Account</string>
+
+    <!--  Home  -->
+    <string name="location_name">Lungangen</string>
+    <string name="search">Search</string>
+    <string name="categories">Categories</string>
+    <string name="categories_name">Categories Name</string>
+    <string name="popular">Popular Deals</string>
+    <string name="see_all">See All</string>
+    <string name="card_name">Card Name</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--  Cart  -->
+    <string name="cart_name">Cart</string>
+    <string name="btn_add_to_cart">Add to Cart</string>
+    <string name="recommend_product">You may also need</string>
+    <string name="order">Order</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">Price</string>
+    <string name="sum_product">Sum Product</string>
+    <string name="unit">unit\n</string>
+    <string name="cart_fragment_notify">Chưa có sản phẩm được chọn!</string>
+    <string name="clear_cart">Clear</string>
+    <string name="total_money">Total money:</string>
+    <string name="text_view_money">text view money</string>
+
+    <!--  Details  -->
+    <string name="text_details">Details</string>
+
+    <!--  Favorite  -->
+    <string name="favorite">Favorite</string>
+    <string name="add_all_to_cart">All to Cart</string>
+    <string name="clear_favorite">Clear</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="favorite_fragment_notify">Chưa có sản phẩm yêu thích!</string>
+
+    <!--  Account  -->
+    <string name="title_account">Account</string>
+    <string name="account_email">Example@gmail.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <string name="level_text">Level %1$d</string>
+
+    <string name="des_image">des</string>
+    <string name="change_avatar">Change Avatar</string>
+
+    <string name="upload">Upload</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="my_order">My Order</string>
+    <string name="profile">Profile</string>
+
+    <!-- My Order  -->
+    <string name="title_my_order">Order</string>
+    <string name="text_empty_money">$ 0.00</string>
+
+    <!--  Profile   -->
+    <string name="title_profile">Profile</string>
+    <string name="phone_number">Phone number</string>
+    <string name="address">Address</string>
+    <string name="change_password">Change password</string>
+
+    <!--  Change Password  -->
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_new_password">Confirm password</string>
+    <string name="save">Save</string>
+    <string name="toast_enter_text">Vui lòng nhập dữ liệu!</string>
+    <string name="toast_wrong_password">Mật khẩu cũ không đúng!</string>
+    <string name="toast_wrong_new_password">Mật khẩu mới chưa trùng nhau!</string>
+    <string name="password_8_characters">Mật khẩu mới >= 8 ký tự!</string>
+    <string name="toast_password_not_space">Không được chứa KHOẢNG TRỐNG!</string>
+    <string name="toast_change_password_success">Đổi mật khẩu thành công!</string>
+
+    <!--  Order Confirm  -->
+    <string name="title_confirm_order">Xác nhận thanh toán</string>
+    <string name="phone_confirm">0123456789</string>
+    <string name="address_confirm">address example</string>
+    <string name="confirm_profile">Thông tin nhận hàng</string>
+    <string name="confirm_order">Đặt hàng</string>
+    <string name="cancel_confirm">Huỷ</string>
+
+    <!--  Order Details  -->
+    <string name="txt_order_details">Chi tiết đơn hàng</string>
+    <string name="txt_amount">Amount</string>
+    <string name="action">Action</string>
+
+    <!--  Search  -->
+    <string name="search_here">Search here ...</string>
+
+
+</resources>

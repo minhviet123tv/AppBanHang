@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.favorite.FavoriteFragment"
+    android:id="@+id/layout_fragment_favorite">
+
+    <ImageView
+        android:id="@+id/imageView_back_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        android:layout_marginTop="@dimen/height_10"/>
+
+    <TextView
+        android:id="@+id/textView_title_favorite_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_10"
+        android:text="@string/favorite"
+        android:textSize="@dimen/title_fragment"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_favorite_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView_title_favorite_fragment"
+        android:layout_above="@+id/layout_button_bottom_favorite"/>
+
+    <TextView
+        android:id="@+id/textView_notify_favorite_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/favorite_fragment_notify"
+        android:layout_below="@+id/textView_title_favorite_fragment"
+        android:layout_above="@+id/layout_button_bottom_favorite"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/text_18sp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_button_bottom_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/button_favorite_all_to_cart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/ripple_effect_click"
+            android:text="@string/add_all_to_cart"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/button_favorite_clear"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:minHeight="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/rippel_effect_button_green"
+            android:text="@string/clear_favorite"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</RelativeLayout>

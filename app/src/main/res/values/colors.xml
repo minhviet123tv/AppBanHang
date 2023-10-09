@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="warring">#FF0000</color>
+    <color name="bg_gray">#92F1F1F1</color>
+    <color name="background_main">#FEFEFE</color>
+    <color name="background_white">#FFFFFF</color>
+
+    <color name="primary_color">#FF5E00</color>
+    <color name="text_primary">#7F4E1D</color>
+    <color name="line_primary">#547F4E1D</color>
+    <color name="transparent">#00000000</color>
+
+    <!--  Menu  -->
+    <color name="bg_menu_navigation">#006F1C</color>
+    <color name="menu_checked">#FF5722</color>
+    <color name="menu_not_checked">#FFFFFFFF</color>
+
+    <!--  Home  -->
+    <color name="text_hint">#926D3805</color>
+    <color name="bg_search">#F3F3F3</color>
+
+    <!--  Cart  -->
+    <color name="bg_control_cart">#92D1D1D1</color>
+
+    <!--  Details  -->
+    <color name="button_on_click">#4CAF50</color>
+
+    <!--  Favorite  -->
+    <color name="button_green">#008A06</color>
+
+    <!--  Action Bar. Màu giảm opacity làm trong suốt, tăng độ luxury  -->
+    <color name="bg_action_bar">#F7FFFFFF</color>
+
+    <!--  Search  -->
+    <color name="bg_search_view">#F3F3F3</color>
+    <color name="stroke_search_view">#EAEAEA</color>
+
+
+
+
+</resources>

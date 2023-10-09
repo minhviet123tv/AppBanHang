@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.account.MenuAccountFragment">
+
+    <RelativeLayout
+        android:id="@+id/layout_my_order"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_account_my_order"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_my_order"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/textView_account_my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/my_order"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/custom_navigation_color"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_toRightOf="@+id/imageView_account_my_order"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/imageView_my_order_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_my_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_my_order">
+
+        <ImageView
+            android:id="@+id/imageView_account_my_profile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_profile"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/textView_account_my_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/profile"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/custom_navigation_color"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_toRightOf="@+id/imageView_account_my_profile"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/imageView_my_profile_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_right"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_my_profile">
+
+        <ImageView
+            android:id="@+id/imageView_account_logout"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_logout_png"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/textView_account_my_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/logout"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/custom_navigation_color"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_toRightOf="@+id/imageView_account_logout"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+
+<!--Khoảng cách của cột bên trái trong RCV so với lề (của layout chứa RCV): marginLeft của RCV + marginStart của Card
+    Khoảng cách cột bên phải: Chỉ dùng marginEnd của Card
+    -> Cài đặt khoảng cách cột trái = khoảng cách cột phải
+    Khoảng cách giữa các Card: Chính là marginEnd của Card
+     Khoảng cách trên dưới tự tuỳ chỉnh, chú ý cần có marginBottom của Card để hiện hết Card-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_product_list1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_load_tab_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/button_green"/>
+
+</RelativeLayout>

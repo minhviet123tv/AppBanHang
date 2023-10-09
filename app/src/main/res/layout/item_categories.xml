@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layoutItem_categories"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="2.5dp"
+    android:layout_marginBottom="2.5dp"
+    android:layout_marginStart="3dp"
+    android:layout_marginEnd="3dp">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView_categories_card"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:src="@drawable/img_1"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:elevation="1dp"
+        android:padding="1dp"/>
+
+    <TextView
+        android:id="@+id/textView_card_categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/card_name"
+        android:textColor="@color/text_primary"
+        android:layout_below="@+id/circleImageView_categories_card"
+        android:layout_marginTop="@dimen/height_10"
+        android:textSize="@dimen/text_15sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

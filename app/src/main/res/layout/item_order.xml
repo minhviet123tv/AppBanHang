@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_order_item"
+    android:layout_marginBottom="5dp">
+
+
+    <ImageView
+        android:id="@+id/imageView_order_item_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@drawable/ic_order_ordered"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/textView_order_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order ID"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/text_primary"
+        android:layout_toRightOf="@+id/imageView_order_item_image"
+        android:layout_marginLeft="@dimen/height_10"/>
+
+    <TextView
+        android:id="@+id/textView_order_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order date"
+        android:textSize="@dimen/text_15sp"
+        android:textColor="@color/text_primary"
+        android:layout_toRightOf="@+id/imageView_order_item_image"
+        android:layout_below="@+id/textView_order_id"
+        android:layout_marginLeft="@dimen/height_10"
+        android:layout_marginTop="@dimen/height_10"/>
+
+    <TextView
+        android:id="@+id/textView_order_sum_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sum money"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/primary_color"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+
+
+</RelativeLayout>

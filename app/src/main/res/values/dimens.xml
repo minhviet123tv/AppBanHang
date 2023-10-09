@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_10">10dp</dimen>
+    <dimen name="height_18">18dp</dimen>
+    <dimen name="height_20">20dp</dimen>
+    <dimen name="height_34">34dp</dimen>
+    <dimen name="height_48">48dp</dimen>
+
+    <!-- Sign up -->
+    <dimen name="text_small_login">16sp</dimen>
+    <dimen name="text_18sp">18sp</dimen>
+    <dimen name="text_15sp">15sp</dimen>
+    <dimen name="text_button_sign_up">20sp</dimen>
+    <dimen name="text_20sp">20sp</dimen>
+    <dimen name="text_22sp">22sp</dimen>
+
+    <!--  Fragment  -->
+    <dimen name="title_fragment">24sp</dimen>
+
+    <!--   Home   -->
+    <dimen name="padding20">20dp</dimen>
+    <dimen name="_30dp">30dp</dimen>
+
+    <!--  Product  -->
+    <dimen name="txt_product_card_name">15sp</dimen>
+    <dimen name="txt_product_card_unit">12sp</dimen>
+    <dimen name="txt_product_card_price">20sp</dimen>
+
+    <!--  Details Product  -->
+    <dimen name="title_details_product">24sp</dimen>
+    <dimen name="price_details_product">24sp</dimen>
+    <dimen name="unit_details_product">16sp</dimen>
+    <dimen name="des_details_product">14sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fragment_horizontal_margin">16dp</dimen>
+    <dimen name="fragment_vertical_margin">16dp</dimen>
+    <dimen name="padding_main_16dp">16dp</dimen>
+
+</resources>

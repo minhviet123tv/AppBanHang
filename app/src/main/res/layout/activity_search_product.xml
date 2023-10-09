@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".searchproduct.SearchProductActivity">
+
+    <include layout="@layout/action_bar_fragment_children"
+        android:id="@+id/action_bar_search"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_search_product_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar_search"
+        android:paddingLeft="@dimen/padding_main_16dp"
+        android:paddingRight="@dimen/padding_main_16dp">
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView_product_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_search_product"
+                app:defaultQueryHint="@string/search_here"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_search_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/searchView_product_activity"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_load_search_product"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/action_bar_search"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/button_green"/>
+
+
+</RelativeLayout>

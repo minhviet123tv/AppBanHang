@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.apachat.swipereveallayout.core.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/layout_item_swipe_favorite"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <!--  Layout swipe (Nếu nhiều đối tượng nên dùng LinearLayout để chia đều) -->
+    <RelativeLayout
+        android:id="@+id/layout_item_swipe_favorite_right"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:background="@color/warring"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/ic_delete_favorite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_trash_white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <!--  Layout item  -->
+    <RelativeLayout
+        android:id="@+id/layout_item_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView_item_favorite_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/img_10"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/textView_item_favorite_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView_item_favorite_image"
+            android:layout_marginStart="15dp"
+            android:text="@string/product_name"
+            android:textSize="@dimen/text_18sp"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:id="@+id/textView_item_favorite_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/imageView_item_favorite_image"
+            android:layout_below="@+id/textView_item_favorite_product_name"
+            android:layout_marginStart="15dp"
+            android:text="@string/price"
+            android:textSize="@dimen/text_15sp"
+            android:textColor="@color/text_primary"/>
+        <TextView
+            android:id="@+id/textView_item_favorite_product_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/textView_item_favorite_product_price"
+            android:layout_below="@+id/textView_item_favorite_product_name"
+            android:layout_marginStart="15dp"
+            android:text="@string/unit"
+            android:textSize="@dimen/text_15sp"
+            android:textColor="@color/text_primary"/>
+
+        <LinearLayout
+            android:id="@+id/layout_add_to_cart_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:id="@+id/imageView_ic_cart_favorite"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:src="@drawable/ic_cart"/>
+
+            <TextView
+                android:id="@+id/textView_add_to_cart_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/add_to_cart"
+                android:textSize="14sp"
+                android:textColor="@color/primary_color"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.apachat.swipereveallayout.core.SwipeLayout>

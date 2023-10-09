@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.cart.ConfirmOrderActivity"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <include layout="@layout/action_bar_fragment_children"
+        android:id="@+id/layout_action_bar"/>
+
+    <TextView
+        android:id="@+id/txt_title_confirm_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_profile"
+        android:layout_below="@+id/layout_action_bar"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_22sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:layout_below="@+id/txt_title_confirm_order"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txt_email_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/example_email"
+        android:layout_below="@+id/textView_email"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textView_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:layout_below="@+id/txt_email_confirm"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txt_phone_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_confirm"
+        android:layout_below="@+id/textView_phone"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/textView_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address"
+        android:layout_below="@+id/txt_phone_confirm"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txt_address_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address_confirm"
+        android:layout_below="@+id/textView_address"
+        android:textSize="@dimen/text_18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/button_confirm_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_order"
+        android:textSize="@dimen/text_18sp"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/ripple_effect_click"
+        android:layout_below="@+id/txt_address_confirm"/>
+    <Button
+        android:id="@+id/button_cancel_confirm_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_confirm"
+        android:textSize="@dimen/text_18sp"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/rippel_effect_button_green"
+        android:layout_below="@+id/button_confirm_order"/>
+
+</RelativeLayout>

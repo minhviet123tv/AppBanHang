@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/layout_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/height_10"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_dinh_vi"/>
+        <TextView
+            android:id="@+id/textView_title_home_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location_name"
+            android:textSize="@dimen/title_fragment"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/fragment_search_product"
+        android:name="com.example.prm391x_searchfood_vietcvfx12045.searchproduct.SearchProductFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_below="@+id/layout_location"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_title_catagory_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_search_product"
+        android:layout_marginTop="@dimen/height_34">
+
+        <TextView
+            android:id="@+id/textView_title_catagory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/categories"
+            android:textSize="@dimen/text_22sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView_see_all_catagory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding20"
+            android:text="@string/see_all"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/text_18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_categories_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_below="@id/layout_title_catagory_home"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_title_popular_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recyclerView_categories_home"
+        android:layout_marginTop="@dimen/height_18">
+
+        <TextView
+            android:id="@+id/textView_title_popular_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular"
+            android:textSize="@dimen/text_22sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textView_see_all_popular_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/padding20"
+            android:text="@string/see_all"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/text_18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_popular_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_10"
+        android:layout_below="@id/layout_title_popular_home"/>
+
+</RelativeLayout>
